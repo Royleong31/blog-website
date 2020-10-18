@@ -1,3 +1,16 @@
+h4 {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+input {
+  width: 100%;
+}
+
+.post-field {
+  
+}
+
 .container-fluid {
     padding-top: 70px;
     padding-bottom: 70px;
