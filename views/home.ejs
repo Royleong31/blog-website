@@ -6,8 +6,11 @@
 <% posts.forEach((i) => { %>
   <h1> <%= i.title %></h1>
   <p>
-  <%= i.body %>
+  <%= i.body.substring(0, 100) + '...' %>
+  <a href='posts/<%= i.title %>' >Read More</a>
   </p>
 <% }) %>
+
+<a class='btn btn-primary' href='compose'>Compose</a>
 
 <%- include('partials/footer'); -%>

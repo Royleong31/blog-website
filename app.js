@@ -1,5 +1,5 @@
 //jshint esversion:6
-
+var _ = require('lodash');
 const express = require("express");
 const bodyParser = require("body-parser");
 const ejs = require("ejs");
@@ -40,8 +40,18 @@ app.get('/compose', (req, res) => {
 });
 
 app.get('/posts/:postName', (req, res) => {
-  let postName = req.params.postName;
-  console.log(postName);
+  let postName = _.lowerCase(req.params.postName);
+  
+  for (i of posts) {
+    let lowerCasePostName = _.lowerCase(i.title);
+    if (lowerCasePostName === postName) {
+      res.render('post', {
+        title: i.title,
+        body: i.body
+      });
+    } 
+  }
+  
 });
 
 app.post('/compose', (req, res) => {
