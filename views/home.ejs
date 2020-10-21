@@ -1,16 +1,27 @@
 <%- include('partials/header'); -%>
-<h1>Home</h1>
+<div class="home-div">
+  <h1>Home</h1>
+  <p><%= homeStartingContent %></p>
+</div>
 
-<p><%= homeStartingContent %></p>
 
 <% posts.forEach((i) => { %>
-  <h1> <%= i.title %></h1>
-  <p>
-  <%= i.body.substring(0, 100) + '...' %>
-  <a href='posts/<%= i.title %>' >Read More</a>
-  </p>
+<h1> <%= i.title %></h1>
+<p>
+  <%= i.content.substring(0,100) + '...' %>
+  <a href='posts/<%= i.title %>'>Read More</a>
+</p>
 <% }) %>
 
 <a class='btn btn-primary' href='compose'>Compose</a>
 
-<%- include('partials/footer'); -%>
+</div>
+
+</div>
+<div class="footer-padding"></div>
+<footer class='home-footer'>
+  <p>Made with ❤️ by The App Brewery</p>
+</footer>
+</body>
+
+</html>
