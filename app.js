@@ -16,10 +16,7 @@ app.use(express.static("public"));
 let posts = [];
 
 //    Database 
-mongoose.connect('mongodb+srv://admin-roy:Royl3ong@cluster0.woyal.mongodb.net/blogDB?retryWrites=true&w=majority', {
-  useUnifiedTopology: true,
-  useNewUrlParser: true
-});
+// Insert mongo.connect
 
 
 const postSchema = {
