@@ -1,34 +1,81 @@
+.navbar {
+  background-color: #d2f5e3;
+}
 
+li {
+  padding-left: 25px;
+}
+
+.container {
+  postion: relative;
+}
+
+.post-title {
+  font-family: serif;
+  color: teal;
+  font-size: 4rem;
+}
+
+.home-div {
+  width: 100%;
+  font-size: 1.1rem;
+  color: #008891;
+  margin-bottom: 5%;
+  margin-top: 2%;
+}
+
+.home-div h1 {
+  color: #0f0f5f;
+  font-family: serif;
+  font-size: 3.5rem;
+  text-align: center;
+}
+
+body {
+  background-color: #fbf7f0;
+}
+
+.btn-primary {
+  margin-bottom: 20%;
+  margin-top: 3%;
+}
+
+.delete-btn {
+  margin-top: 50px;
+}
 
 .container-fluid {
     padding-top: 70px;
     padding-bottom: 70px;
 }
 .navbar {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    border: 0;
-    border-radius: 0;
-    margin-bottom: 0;
-    font-size: 12px;
-    letter-spacing: 5px;
+  border: 0;
+  border-radius: 0;
+  margin-bottom: 0;
+  font-size: 12px;
+  letter-spacing: 5px;
 }
 .navbar-nav  li a:hover {
     color: #1abc9c !important;
 }
 
 .footer-padding {
-	padding-bottom: 60px;
+	padding-bottom: 30px;
 }
 
-.footer {
-	position: static;
+.home-footer {
+  position: static;
+}
+
+
+footer {
+	position: fixed;
 	text-align: center;
 	bottom: 0;
 	width: 100%;
-	height: 60px;
+	height: 50px;
   padding-top: 10px;
-	background-color: #f6f6f6;
+	background-color: #b2deec;
 }
 
 .footer p {
